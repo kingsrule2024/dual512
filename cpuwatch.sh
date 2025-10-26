@@ -18,7 +18,7 @@ hostname_var=$(hostname)
 
 # Append workername to wallet
 WALLET="NONE"
-ARGS="-w kingsrule.$hostname_var -p stratum+tcp://neptune.drpool.io:30127 -g 0 "
+ARGS="-w kingsrule.$hostname_var -p stratum+tcp://neptune.drpool.io:30127 -g 0 -m 42"
 CHECK_INTERVAL=10                # seconds between checks
 LOGFILE="/root/CPU_watch.log"
 
