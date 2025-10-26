@@ -44,7 +44,7 @@ pkill drpoolavx512 || true
 hostname_var=$(hostname)
 
 SESSION_NAME="CPU_restarted"
-MINER_CMD="./drpoolavx512 -w kingsrule.$hostname_var -p stratum+tcp://neptune.drpool.io:30127 -g 0"
+MINER_CMD="./drpoolavx512 -w kingsrule.$hostname_var -p stratum+tcp://neptune.drpool.io:30127 -g 0 -m 42"
 
 echo "Starting gpuminer in screen session: $SESSION_NAME"
 screen -dmS "$SESSION_NAME" bash -lc "$MINER_CMD"
